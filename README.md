@@ -4,13 +4,13 @@ info@inove.com.ar\
 Web: [Inove](http://inove.com.ar)
 
 # ¡Proyecto Ahorcado! [Python]
-En este repositorio contiene todos los materiales e instrucción para poder realizar el proyecto de python inicia.
+En este repositorio contiene todos los materiales e instrucciones para poder realizar el proyecto de python inicial.
 
-__NOTA__: Recomendamos haber realizado todos los ejercicios de pŕactica para poder realizar este proyecto.
+__NOTA__: Recomendamos haber realizado todos los ejercicios de práctica para poder realizar este proyecto.
 
 ## Recursos
-- Contará con un archivo "palabras.csv" con las palabras secretas que se deben adivinar en el juego. Usted puede quitar/agregar/modificar las palabras secretas cuando ensaye su programa.
-- Contará con un script de python "interfaz.py" la cual será la responsable de dibujar la interfaz del juego.
+- Contará con un archivo "palabras.csv" con las palabras secretas que se deben adivinar en el juego. Usted puede quitar/agregar/modificar las palabras secretas cuando ensaye su programa (si lo desea, sino dejar el archivo como está).
+- Contará con un script de python "interfaz.py" el cual será el responsable de dibujar la interfaz del juego.
 
 ## Como comenzar
 - Deberá crear un archivo "main.py" en el cual colocará todo el código necesario para realizar el proyecto.
@@ -19,8 +19,8 @@ __NOTA__: Recomendamos haber realizado todos los ejercicios de pŕactica para po
 - - random
 - - interfaz
 
-- Luego deberá crear el bloque principal `if __name__ == "__main__":`. Dentro del bloque principal invocará sus funciones y desarrollará el proyecto.
-- Entre el lugar donde usted importo las librerías y generó el bloque pincipal, ahí irá creando sus funciones.
+- Luego deberá crear el bloque principal `if __name__ == "__main__":`. Dentro del bloque principal utilizará sus funciones y desarrollará el proyecto.
+- Entre el lugar donde usted importó las librerías y generó el bloque pincipal, ahí irá creando sus funciones.
 
 ## Módulo de Interfaz
 - En el archivo __interfaz.py__ se encuentra la función "dibujar" para dibujar en consola el ahorcado.
@@ -75,6 +75,7 @@ if __name__ == "__main__":
         print(f'\n¡Usted ha perdido la partida!, palabra secreta {palabra_secreta}!\n')
 ```
 
+Tener en cuenta que todas las funciones que se utilizan en ese código no están implementadas aún, será usted quien la implemente y de eso se tratará el proyecto de este curso.
 
 ## Funciones del sistema
 Dentro del archivo __main.py__ deberá implementar las siguientes funciones que utilizará luego el bloque main para armar el proyecto:
@@ -106,16 +107,16 @@ Entrada (argumentos):
 - Esta función recibe por parámetro la lista de palabras utilizadas hastas el momento.
 
 Objetivo:
-- Deberá armar un bucle While infinito que se ejecute hasta que el procedimiento de pedir letra se complete.
+- Deberá armar un bucle While infinito que se ejecute hasta que el procedimiento de pedir letra se complete exitosamente.
 - Deberá pedirle al usuario que ingrese por "input" una letra nueva que no haya utilizado antes. Almacenar esa letra ingresada por "input" en una variable.
 - La letra ingresada deberá transformarse a minúscula para evitar problemas.
-- Utilizando la variable "letras_usadas" deberá verificar utilizando el operador "in" que esa letra es nuevo y no se ha utilizado antes. Si se ha utilizado antes el sistema no deberá salir del bucle y volverá al comienzo solicitando una letra nueva.
-- Deberá verificar que la letra ingresada es solo una letra, es decir, verificar que no se ha ingresado más de una letra a la vez. Para eso utilice la función "len". Si se ha ingresado más de una letra junta el sistema no deberá salir del bucle y volverá al comienzo solicitando una letra nueva.
+- Utilizando la variable "letras_usadas" deberá verificar utilizando el operador "in" que esa letra es nueva y no se ha utilizado antes. Si se ha utilizado antes (es decir, existe dentro de "letras_usadas") el sistema no deberá salir del bucle y volverá al comienzo solicitando una letra nueva.
+- Deberá verificar que la letra ingresada es solo una letra, es decir, verificar que no se ha ingresado más de una letra a la vez. Para eso utilice la función "len". Si se ha ingresado más de una letra junta, el sistema no deberá salir del bucle y volverá al comienzo solicitando una letra nueva.
 - Si todas las condiciones se cumplen, deberá salir del bucle.
 - Antes de que finalice la función debe guardar la variable "letra" que validó en la lista "letras_usadas" utilizando append.
 
 Salida (return):
-- La función deberá retornar la letra validad e ingresada por el usuario.
+- La función deberá retornar la letra validada (return).
 
 
 ### Funcion "verificar_letra"
@@ -146,7 +147,7 @@ Entrada (argumentos):
 
 Objetivo:
 - Deberá verificar si todas las letras de la "palabra_secreta" se encuentran contenidas/disponible en la lista de letras usadas "letras_usadas".
-- Para esto deberá armar un bucle que recorra todas las letras de "palabra_secreta". Con el operador "in" debe verificar si cada letra de la palabra oculta existe en la lista "letras_usadas".
+- Para esto deberá armar un bucle que recorra todas las letras de "palabra_secreta". Con el operador "in" debe verificar si cada letra de la palabra secreta existe en la lista "letras_usadas".
 - Con que una letra de la palabra secreta no exista en las letras usadas, se debe terminar el bucle e indicar que aún no se ha adivinado la palabra secreta.
 
 Salida (return):
@@ -155,5 +156,6 @@ Salida (return):
 
 
 ## Puntos extra (bonus track)
-En caso que desee mejor el sistema puede realizar las siguientes optimizaciones:
-- 
+En caso que desee mejorar el sistema puede realizar las siguientes optimizaciones. No es necesario realizar esta parte para aprobar, es un plus simplemente ^_^:
+- Robustecer la función "pedir_letra" para que no explota en caso de ingresarse un número.
+- Robustecer la función "pedir_letra" para validar que el dato ingresado es efecticamente una letra del abecedario (evitar números, símbolos, espacios).
