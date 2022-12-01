@@ -8,6 +8,22 @@ En este repositorio contiene todos los materiales e instrucción para poder real
 
 __NOTA__: Recomendamos haber realizado todos los ejercicios de pŕactica para poder realizar este proyecto.
 
+## Validación y entrega del proyecto
+Para validar el avance de su proyecto deberá utilizar el sistema de desafios, el cual le indicará los puntos a mejorar y continuar trabajando. Cualquier duda con el resultado del sistema de desafios con consulta por le discord.
+
+Para que su programa pueda ser validado por el sistema de desafios, debe agregar al comienzo del archivo el siguiente comentario:
+```python
+# CODE:40
+```
+
+Además, para que le sistema de desafios pueda evaluar si avance deberá comentar la siguiente líne de código antes de subirlo al sistema de desafios:
+```python
+#import interfaz
+```
+
+Descomente esa línea de código cuando esté evaluando el funcionamiento del sistema en el Visual Studio Code.
+
+
 ## Recursos
 - Contará con un archivo "palabras.csv" con las palabras secretas que se deben adivinar en el juego. Usted puede quitar/agregar/modificar las palabras secretas cuando ensaye su programa.
 - Contará con un script de python "interfaz.py" la cual será la responsable de dibujar la interfaz del juego.
