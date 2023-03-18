@@ -6,15 +6,8 @@ Web: [Inove](http://inove.com.ar)
 # ¡Proyecto Ahorcado! [Python]
 En este repositorio contiene todos los materiales e instrucciones para poder realizar el proyecto de python inicial.
 
-__NOTA__: Recomendamos haber realizado todos los ejercicios de práctica para poder realizar este proyecto.
-
 ## Validación y entrega del proyecto
 Para validar el avance de su proyecto deberá utilizar el sistema de desafios, el cual le indicará los puntos a mejorar y continuar trabajando. Cualquier duda con el resultado del sistema de desafios con consulta por le discord.
-
-Para que su programa pueda ser validado por el sistema de desafios, debe agregar al comienzo del archivo el siguiente comentario:
-```python
-# CODE:40
-```
 
 Además, para que le sistema de desafios pueda evaluar si avance deberá comentar la siguiente líne de código antes de subirlo al sistema de desafios:
 ```python
@@ -25,13 +18,11 @@ Descomente esa línea de código cuando esté evaluando el funcionamiento del si
 
 
 ## Recursos
-- Contará con un archivo "palabras.csv" con las palabras secretas que se deben adivinar en el juego. Usted puede quitar/agregar/modificar las palabras secretas cuando ensaye su programa (si lo desea, sino dejar el archivo como está).
 - Contará con un script de python "interfaz.py" el cual será el responsable de dibujar la interfaz del juego.
 
 ## Como comenzar
 - Deberá crear un archivo "main.py" en el cual colocará todo el código necesario para realizar el proyecto.
 - Dentro de ese archivo deberá importar las siguientes librerías ni bien comienza el archivo:
-- - CSV
 - - random
 - - interfaz
 
@@ -59,8 +50,9 @@ if __name__ == "__main__":
     letras_usadas = []
     es_ganador = False
 
-    # Leer la palabra secreta de un archivo csv.
-    palabra_secreta = leer_palabra_secreta('palabras.csv')
+    # Leer la palabra secreta de una lista.
+    palabras = ["listas", "bucles", "variables"]
+    palabra_secreta = leer_palabra_secreta(palabras)
     
     # Esto se realiza para que el jugador pueda ver al principio
     # la cantidad de letras de la palabra a adivinar.
