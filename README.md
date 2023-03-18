@@ -7,15 +7,7 @@ Web: [Inove](http://inove.com.ar)
 En este repositorio contiene todos los materiales e instrucciones para poder realizar el proyecto de python inicial.
 
 ## Validación y entrega del proyecto
-Para validar el avance de su proyecto deberá utilizar el sistema de desafios, el cual le indicará los puntos a mejorar y continuar trabajando. Cualquier duda con el resultado del sistema de desafios con consulta por le discord.
-
-Además, para que le sistema de desafios pueda evaluar si avance deberá comentar la siguiente líne de código antes de subirlo al sistema de desafios:
-```python
-#import interfaz
-```
-
-Descomente esa línea de código cuando esté evaluando el funcionamiento del sistema en el Visual Studio Code.
-
+Para validar el avance de su proyecto deberá utilizar el sistema de desafios, el cual le indicará los puntos a mejorar y continuar trabajando. Cualquier duda con el resultado del sistema de desafios, puede consultar por le discord.
 
 ## Recursos
 - Contará con un script de python "interfaz.py" el cual será el responsable de dibujar la interfaz del juego.
@@ -91,15 +83,14 @@ Dentro del archivo __main.py__ deberá implementar las siguientes funciones que 
 ### Funcion "leer_palabra_secreta"
 Encabezado de la función:
 ```python
-def leer_palabra_secreta(csvfilename):
+def leer_palabra_secreta(palabras):
 ```
 
 Entrada (argumentos):
-- Esta función recibe por parámetro el nombre del archivo CSV que contiene la lista de posibles palabras secretas a adivinar.
+- Esta función recibe por parámetro la lista de posibles palabras secretas a adivinar.
 
 Objetivo:
-- La función deberá leer el CSV y recorrer todas la filas. Deberá armar una lista de palabras secretas.
-- Una vez contenidas todas las palabras en una lista, utilizar la función `random.choice` para seleccionar aleatoriamente alguna de ellas. Almacenar esa palabra seleccionada en una varible.
+- La función deberá utilizar la función `random.choice` para seleccionar aleatoriamente alguna palabra de la lista de palabras. Almacenar esa palabra seleccionada en una varible.
 
 Salida (return):
 - La función deberá retornar la palabra secreta seleccionada por el random.choice.
