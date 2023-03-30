@@ -24,7 +24,7 @@ Para validar el avance de su proyecto deberá utilizar el sistema de desafios, e
 ## Módulo de Interfaz
 - En el archivo __interfaz.py__ se encuentra la función "dibujar" para dibujar en consola el ahorcado.
 - Argumentos de la función dibujar:
-  - palabra_secreta [string]: Palabra secreta que debe adivinar el jugador. Es la palabra que se leyó del CSV.
+  - palabra_secreta [string]: Palabra secreta que debe adivinar el jugador.
   - lista_letras_usadas [lista]: Lista de letras usadas hasta el momento, ingresadas por el usuario en cada intento.
   - intentos_invalidos [int]: Cantidad de intentos invalidos.
     - 0 --> no hubo errores
