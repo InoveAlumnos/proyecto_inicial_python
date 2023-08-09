@@ -50,7 +50,7 @@ if __name__ == "__main__":
     # la cantidad de letras de la palabra a adivinar.
     interfaz.dibujar(palabra_secreta, letras_usadas, intentos)
     
-    while intentos < max_cantidad_intentos = 7 and not es_ganador:
+    while intentos < max_cantidad_intentos and not es_ganador:
         # Pedir una nueva letra
         letra = pedir_letra(letras_usadas)
 
