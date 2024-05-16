@@ -53,6 +53,7 @@ if __name__ == "__main__":
     while intentos < max_cantidad_intentos = 7 and not es_ganador:
         # Pedir una nueva letra
         letra = pedir_letra(letras_usadas)
+        letras_usadas.append(letra)
 
         # Verificar si la letra es parte de la palabra secreta        
         if verificar_letra(letra, palabra_secreta) == False:
@@ -112,7 +113,7 @@ Objetivo:
 - Utilizando la variable "letras_usadas" deberá verificar utilizando el operador "in" que esa letra es nueva y no se ha utilizado antes. Si se ha utilizado antes (es decir, existe dentro de "letras_usadas") el sistema no deberá salir del bucle y volverá al comienzo solicitando una letra nueva.
 - Deberá verificar que la letra ingresada es solo una letra, es decir, verificar que no se ha ingresado más de una letra a la vez. Para eso utilice la función "len". Si se ha ingresado más de una letra junta, el sistema no deberá salir del bucle y volverá al comienzo solicitando una letra nueva.
 - Si todas las condiciones se cumplen, deberá salir del bucle.
-- Antes de que finalice la función debe guardar la variable "letra" que validó en la lista "letras_usadas" utilizando append.
+- Antes de que finalice la función debe retornar la letra validada (return)
 
 Salida (return):
 - La función deberá retornar la letra validada (return).
