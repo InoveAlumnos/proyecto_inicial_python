@@ -6,8 +6,8 @@ Web: [Inove](http://inove.com.ar)
 # ¡Proyecto Ahorcado! [Python]
 En este repositorio contiene todos los materiales e instrucciones para poder realizar el proyecto de python inicial.
 
-## Validación y entrega del proyecto
-Para validar el avance de su proyecto deberá utilizar el sistema de desafios, el cual le indicará los puntos a mejorar y continuar trabajando. Cualquier duda con el resultado del sistema de desafios, puede consultar por le discord.
+## Entrega del proyecto
+Para poder entregar este proyecto y que pueda ser validado y aprobado deberá crear un repositorio (puede forkear este repositorio para ello) y almacenar allí su solución a este desafió. Una vez hecho eso deberá entregar el link de su repositorio a el email de alumnos alumnos.inove@gmail.com
 
 ## Recursos
 - Contará con un script de python "interfaz.py" el cual será el responsable de dibujar la interfaz del juego.
@@ -154,8 +154,3 @@ Salida (return):
 - Si se avidinó por completo la palabra secreta, esta función debe retornar True.
 - Si __no__ se avidinó por completo la palabra secreta, esta función debe retornar False.
 
-
-## Puntos extra (bonus track)
-En caso que desee mejorar el sistema puede realizar las siguientes optimizaciones. No es necesario realizar esta parte para aprobar, es un plus simplemente ^_^:
-- Robustecer la función "pedir_letra" para que no explota en caso de ingresarse un número.
-- Robustecer la función "pedir_letra" para validar que el dato ingresado es efecticamente una letra del abecedario (evitar números, símbolos, espacios).
